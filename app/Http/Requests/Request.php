@@ -8,7 +8,7 @@ class Request extends FormRequest
 {
     public function authorize()
     {
-    	// Using policy for Authorization
+        // Using policy for Authorization
         return true;
     }
 }

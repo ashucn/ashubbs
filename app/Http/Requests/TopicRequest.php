@@ -6,10 +6,9 @@ class TopicRequest extends Request
 {
     public function rules()
     {
-        switch($this->method())
-        {
+        switch ($this->method()) {
             // CREATE
-            case 'POST':
+            case 'POST' :
             {
                 return [
                     // CREATE ROLES
@@ -17,7 +16,7 @@ class TopicRequest extends Request
             }
             // UPDATE
             case 'PUT':
-            case 'PATCH':
+            case 'PATCH' :
             {
                 return [
                     // UPDATE ROLES
@@ -28,7 +27,7 @@ class TopicRequest extends Request
             default:
             {
                 return [];
-            };
+            }
         }
     }
 
